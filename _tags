@@ -1,0 +1,3 @@
+true: -traverse,annot,bin_annot,thread
+true: package(core), package(ppx_monad), package(ppx_deriving.std)
+"src": include

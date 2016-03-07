@@ -1,0 +1,19 @@
+opam-version: "1.2"
+name: "pego"
+version: "0.1"
+maintainer: "Tomoya Chiba <tomo.asleep@gmail.com>"
+author: "Tomoya Chiba <tomo.asleep@gmail.com>"
+homepage: "https://github.com/tomoasleep/pego"
+bug-reports: "https://github.com/tomoasleep/pego/issues"
+license: "MIT"
+dev-repo: "https://github.com/tomoasleep/pego.git"
+build: [make]
+install: [make "install"]
+remove: ["ocamlfind" "remove" "pego"]
+depends: [
+  "ocamlfind"
+  "core"
+  "ppx_monad"
+  "ppx_deriving"
+]
+ocaml-version: [>= "4.02.0"]
